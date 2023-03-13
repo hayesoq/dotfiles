@@ -62,13 +62,13 @@ window:
   # Values for `decorations` (macOS only):
   #     - transparent: Title bar, transparent background and title bar buttons
   #     - buttonless: Title bar, transparent background and no title bar buttons
-  decorations: none
+  decorations: full
 
   # Background opacity
   #
   # Window opacity as a floating point number from `0.0` to `1.0`.
   # The value `0.0` is completely transparent and `1.0` is opaque.
-  opacity: 0.9
+  opacity: 0.7
 
   # Startup Mode (changes require restart)
   #
@@ -79,7 +79,7 @@ window:
   #
   # Values for `startup_mode` (macOS only):
   #   - SimpleFullscreen
-  startup_mode: maximized
+  #startup_mode: maximized
 
   # Window title
   #title: Alacritty
@@ -131,8 +131,8 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: JetBrainsMono Nerd Font Mono
-draw_bold_text_with_bright_colors: true
+    family: JetBrainsMono Nerd Font
+draw_bold_text_with_bright_colors: false
 
     # The `style` can be specified to pick a specific face.
     #style: Regular
@@ -171,7 +171,7 @@ draw_bold_text_with_bright_colors: true
     #style: Bold Italic
 
   # Point size
-  #size: 11.0
+  #size: 9
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
@@ -197,12 +197,12 @@ draw_bold_text_with_bright_colors: true
 # If `true`, bold text is drawn using the bright color variants.
 #draw_bold_text_with_bright_colors: false
 
-# Colors (Tomorrow Night)
+# Colors
 colors:
   # Default colors
   primary:
-    background: '#292C3E'
-    foreground: '#EBEBEB'
+    background: '0x171717'
+    foreground: '0xEBEBEB'
 
     # Bright and dim foreground colors
     #
@@ -295,25 +295,25 @@ colors:
 
   # Normal colors
   normal:
-    black:   '#0d0d0d'
+    black:   '#666666'
     red:     '#FF301B'
-    green:   '#A0E521'
-    yellow:  '#FFC620'
-    blue:    '#1BA6FA'
-    magenta: '#8763B8'
-    cyan:    '#21DEEF'
-    white:   '#EBEBEB'
+    green:   '#8EFF1E'
+    yellow:  '#FFFB00'
+    blue:    '#1E8EFF'
+    magenta: '#E500E5'
+    cyan:    '#00E5E5'
+    white:   '#E5E5E5'
 
   # Bright colors
   bright:
-    black:   '#6D7070'
-    red:     '#FF4352'
-    green:   '#B8E466'
-    yellow:  '#FFD750'
-    blue:    '#1BA6FA'
-    magenta: '#A578EA'
-    cyan:    '#73FBF1'
-    white:   '#FEFEF8'
+    black:   '#666666'
+    red:     '#FF301B'
+    green:   '#8EFF1E'
+    yellow:  '#FFFB00'
+    blue:    '#1E8EFF'
+    magenta: '#E500E5'
+    cyan:    '#00E5E5'
+    white:   '#E5E5E5'
 
   # Dim colors
   #
@@ -344,7 +344,7 @@ colors:
   # Whether or not `window.opacity` applies to all cell backgrounds or only to
   # the default background. When set to `true` all cells will be transparent
   # regardless of their background color.
-  #transparent_background_colors: false
+  transparent_background_colors: false
 
 # Bell
 #

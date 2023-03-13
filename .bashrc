@@ -80,8 +80,11 @@ _open_files_for_editing() {
 
     echo "$FUNCNAME: package 'xdg-utils' or 'exo' is required." >&2
 }
-export PS1="\[\033[38;5;1m\][\[$(tput sgr0)\]\u\[$(tput sgr0)\]\[\033[38;5;6m\]@\[$(tput sgr0)\]\H \[$(tput sgr0)\]\[\033[38;5;13m\]\W\[$(tput sgr0)\]\[\033[38;5;1m\]]\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;6m\]\\$\[$(tput sgr0)\] \[$(tput sgr0)\]"
+export PS1="\[\033[38;5;2m\][\[$(tput sgr0)\]\u\[$(tput sgr0)\]\[\033[38;5;2m\]@\[$(tput sgr0)\]\H \[$(tput sgr0)\]\[\033[38;5;1m\]\W\[$(tput sgr0)\]\[\033[38;5;2m\]]\[$(tput sgr0)\]\n \[$(tput sgr0)\]\[\033[38;5;2m\]>\[$(tput sgr0)\] \[$(tput sgr0)\]"
+
 neofetch
+
+export PATH=$PATH:/home/hayes/.local/binn
 
 #------------------------------------------------------------
 
@@ -92,4 +95,3 @@ neofetch
 # alias ef='_open_files_for_editing'     # 'ef' opens given file(s) for editing
 # alias pacdiff=eos-pacdiff
 ################################################################################
-
